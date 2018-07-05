@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiehui <30897863@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colyseus": "^0.9.11",
+    "koa": "^2.5.1"
+  }
+}
