@@ -1,6 +1,8 @@
-const Koa = require('koa');
-const app = new Koa();
-app.use(async ctx => {
-    ctx.body = 'Hello World';
+const http= require('http')
+const express = require('express');
+const app = express();
+app.get('/', function(req, res) {
+    res.send('hello express');
 });
-module.exports = app;
+const server=http.createServer(app);
+module.exports = server

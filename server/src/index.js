@@ -1,4 +1,7 @@
 const gameServer = require('./game-server');
-const app = require('./web-server');
-gameServer.attach({server:app});
-gameServer.listen(3000);
+const webServer = require('./web-server');
+const port = 3000;
+
+gameServer.attach({server:webServer});
+gameServer.listen(port);
+console.log(`Listening on http://localhost:${ port }`);
