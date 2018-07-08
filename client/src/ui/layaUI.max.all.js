@@ -4,7 +4,7 @@ var View=laya.ui.View;
 var Dialog=laya.ui.Dialog;                  
 var TestPageUI=(function(_super){
 		function TestPageUI(){
-			
+
 		    this.btn;
 		    this.clip;
 		    this.combobox;

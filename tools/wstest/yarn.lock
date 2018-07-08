@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@gamestdio/clock@^1.1.0":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@gamestdio/clock/-/clock-1.1.9.tgz#77ec0c011391fbbfdcb4f32112429536fd8680cb"
+
+"@gamestdio/signals@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@gamestdio/signals/-/signals-1.0.0.tgz#3f7501a322b9b7c5d7f105f81d0f638d4e0357a4"
+
+"@gamestdio/state-listener@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@gamestdio/state-listener/-/state-listener-3.0.1.tgz#f346fd3721942a8878f70169cf6f036301046407"
+
+"@gamestdio/websocket@^0.2.5":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@gamestdio/websocket/-/websocket-0.2.7.tgz#863573e2347b43909e2dcafda9cb5cfe0b237046"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
@@ -1343,6 +1359,17 @@ colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
+colyseus.js@^0.9.9:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/colyseus.js/-/colyseus.js-0.9.9.tgz#23a8bbcf085eb7565752a0052c3d5314445541f5"
+  dependencies:
+    "@gamestdio/clock" "^1.1.0"
+    "@gamestdio/signals" "^1.0.0"
+    "@gamestdio/state-listener" "^3.0.0"
+    "@gamestdio/websocket" "^0.2.5"
+    fossil-delta "^1.0.0"
+    notepack.io "^2.1.3"
+
 combined-stream@^1.0.5, combined-stream@~1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.6.tgz#723e7df6e801ac5613113a7e445a9b69cb632818"
@@ -2264,6 +2291,10 @@ form-data@~2.1.1:
 forwarded@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
+
+fossil-delta@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fossil-delta/-/fossil-delta-1.0.2.tgz#a3e9545d5fd5e1b317dca38f0c852baa80b13b89"
 
 fragment-cache@^0.2.1:
   version "0.2.1"
@@ -3895,6 +3926,10 @@ normalize-url@^1.4.0:
     prepend-http "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
+
+notepack.io@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/notepack.io/-/notepack.io-2.1.3.tgz#cc904045c751b1a27b2dcfd838d81d0bf3ced923"
 
 npm-bundled@^1.0.1:
   version "1.0.3"

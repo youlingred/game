@@ -1,14 +1,13 @@
 const Server = require('colyseus').Server;
 const WebSocketServer=require('uws').Server;
-const Room =require('./room/Room')
+const LobbyRoom =require('./room/Lobby')
+const BattleRoom =  require('./room/Battle')
+
 const gameServer=new Server({
     engine:WebSocketServer,
-    verifyClient:(info, next)=>{
-        console.log(info);
-        next(true);
-    }
 });
-gameServer.register('chat',Room);
+gameServer.register('lobby',LobbyRoom);
+gameServer.register('battle',BattleRoom);
 gameServer.onShutdown(function(){
     console.log(`game server is going down.`);
 });

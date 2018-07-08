@@ -2,7 +2,6 @@
 var Handler = laya.utils.Handler;
 var WebGL = laya.webgl.WebGL;
 
-
 // 创建TestPageUI的子类
 function TestUI()
 {
@@ -11,7 +10,9 @@ function TestUI()
 	//btn是编辑器界面设定的，代码里面能直接使用，并且有代码提示
 	this.btn.on(Event.CLICK, this, onBtnClick);
 	this.btn2.on(Event.CLICK, this, onBtn2Click);
-
+	
+	var client = new Colyseus.Client('ws://localhost:3000');
+	
 	function onBtnClick()
 	{
 		//手动控制组件属性
